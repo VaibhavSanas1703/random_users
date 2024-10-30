@@ -130,8 +130,9 @@ button{
      cursor: pointer;
      border-radius: 20px;
      outline: none;
-     border: 2px solid #fff;
-     background: transparent;
+     /* border: 2px solid #FF6500; */
+     border: 0;
+     background: #FF6500;
      color: #fff;
      transition: scale .5s,color .5s;
 }
