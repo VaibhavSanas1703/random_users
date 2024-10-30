@@ -1,0 +1,149 @@
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Onest',sans-serif;
+}
+
+body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: #021526;
+     flex-direction: column;
+     gap: 20px;
+}
+
+h1{
+     color: #FF6500;
+}
+
+.user-container{
+     width: 500px;
+     height: 380px;
+     background: #fff;
+     box-shadow: 0 0px 10px rgba(0,0,0,0.3);
+     border-radius: 20px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     user-select: none;
+     position: relative;
+     gap: 20px;
+}
+
+.user-container h2{
+     position: absolute;
+     top: 43%;
+     font-weight: 500;
+     text-transform: capitalize;
+     color: #021526;
+}
+
+.image-container{
+     width: 100%;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 10px;
+     opacity: 0;
+     transition: opacity .75s ease;
+     margin-top: 50px;
+}
+
+.image-container img{
+     width:100px;
+     border-radius: 50%;
+     object-fit: contain;
+     padding: 5px;
+     border: 2px solid #FF6500;
+}
+
+.user-info{
+     width: 100%;
+     height: 200px;
+     padding: 10px 20px;
+     text-align: center;
+     opacity: 0;
+     transition: opacity .75s ease;
+}
+
+#role{
+     color: #021526;
+     font-weight: 500;
+}
+
+.top{
+     width: 100%;
+     height: 35px;
+     background: #FF6500;
+     position: absolute;
+     top: 0;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-top-right-radius: 20px;
+     border-top-left-radius: 20px;
+     opacity: 0;
+     transition: opacity .75s ease;
+}
+
+.top p{
+     font-size: 16px;
+     color: #fff;
+}
+
+.active{
+     opacity: 1;
+}
+
+
+.user-info h1{
+     font-size: 1.8rem;
+     font-weight: 500;
+     margin: 15px 0;
+     color: #FF6500;
+}
+
+.user-info h3{
+     font-size: 1.1rem;
+     font-weight: 600;
+     margin: 15px 0;
+     color: #021526;
+}
+
+.user-info p{
+     margin: 15px 0;
+     color: #021526;
+}
+
+button{
+     padding: 12px 40px;
+     font-size: 17px;
+     cursor: pointer;
+     border-radius: 20px;
+     outline: none;
+     border: 2px solid #fff;
+     background: transparent;
+     color: #fff;
+     transition: scale .5s,color .5s;
+}
+
+
+@media (max-width:518px){
+     .user-container{
+          width: 95%;
+     }
+
+     button{
+          padding: 10px 30px;
+          font-size: 16px;
+     }
+}
